@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="109px" height="73px" viewBox="0 0 109 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>icon svg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M3.002,0 C1.34,0 0,1.347 0,3.008 L0,3.008 L0,62.992 C0,64.651 1.343,66 3.002,66 L3.002,66 L87.998,66 C89.66,66 91,64.654 91,62.992 L91,62.992 L91,3.008 C91,1.349 89.656,0 87.998,0 L87.998,0 L3.002,0 Z"></path>
+        <path id="path-3" d="M3,0 C1.339,0 0,1.344 0,3 L0,3 L0,7 C0,8.651 1.343,10 3,10 L3,10 L106,10 C107.661,10 109,8.657 109,7 L109,7 L109,3 C109,1.349 107.656,0 106,0 L106,0 L3,0 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-1047.000000, -1156.000000)">
+            <g id="Perks" sketch:type="MSLayerGroup" transform="translate(177.000000, 1155.000000)">
+                <g id="Perk-3" transform="translate(489.000000, 1.000000)">
+                    <g id="icon-svg" transform="translate(381.000000, 0.000000)">
+                        <g id="Group-3" transform="translate(9.000000, 0.000000)">
+                            <mask id="mask-2" sketch:name="Clip 2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M3.002,3 L3,62.992 L88.003,63 L88,3.008 L3.002,3 Z M87.998,69 L3.002,69 C-0.308,69 -3,66.305 -3,62.992 L-3,3.008 C-3,-0.305 -0.308,-3 3.002,-3 L87.998,-3 C91.308,-3 94,-0.305 94,3.008 L94,62.992 C94,66.305 91.308,69 87.998,69 L87.998,69 Z" id="Fill-1" fill="#126AD3" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                        </g>
+                        <g id="Group-8" transform="translate(41.000000, 24.000000)" fill="#DFDFDF" sketch:type="MSShapeGroup">
+                            <path d="M0.6104,15.6719 L6.3944,10.7509 C8.6984,8.8079 9.5394,7.7279 9.5394,6.2149 C9.5394,4.5589 8.3624,3.5989 6.8264,3.5989 C5.2904,3.5989 4.2344,4.4389 2.9384,6.1189 L0.8504,4.4869 C2.4584,2.2309 4.0424,0.9589 7.0434,0.9589 C10.3314,0.9589 12.5884,2.9749 12.5884,5.9749 L12.5884,6.0239 C12.5884,8.6629 11.1954,10.1039 8.2184,12.5269 L4.7624,15.4079 L12.7564,15.4079 L12.7564,17.9999 L0.6104,17.9999 L0.6104,15.6719 Z" id="Fill-4"></path>
+                            <path d="M20.2656,11.5674 L15.7776,5.3274 L18.9456,5.3274 L21.8736,9.5034 L24.8026,5.3274 L27.8986,5.3274 L23.4106,11.4954 L28.0906,18.0004 L24.9216,18.0004 L21.8026,13.5594 L18.7056,18.0004 L15.6096,18.0004 L20.2656,11.5674 Z" id="Fill-6"></path>
+                        </g>
+                        <g id="Group-11" transform="translate(0.000000, 63.000000)">
+                            <mask id="mask-4" sketch:name="Clip 10" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Clip-10"></g>
+                            <path d="M3.0005,3 L3.0005,7 L106.0045,7 L106.0005,3 L3.0005,3 Z M106.0005,13 L3.0005,13 C-0.3085,13 -2.9995,10.309 -2.9995,7 L-2.9995,3 C-2.9995,-0.309 -0.3085,-3 3.0005,-3 L106.0005,-3 C109.3085,-3 112.0005,-0.309 112.0005,3 L112.0005,7 C112.0005,10.309 109.3085,13 106.0005,13 L106.0005,13 Z" id="Fill-9" fill="#126AD3" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

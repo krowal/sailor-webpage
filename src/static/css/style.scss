@@ -1,0 +1,9 @@
+@import "fonts/_loader";
+@import "core";
+@import "mobile";
+@import "desktop";
+
+html{
+    font-family:"Gotham", serif;
+    font-weight:400;
+}

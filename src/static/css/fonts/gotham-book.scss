@@ -1,0 +1,4 @@
+@import "../mixins/font-face";
+
+@include font-face(Gotham-Book, "../fonts/Gotham-Book", 400, null, otf);
+@include font-face(Gotham-Book, "../fonts/Gotham-BookIta", 400, italic, otf);
