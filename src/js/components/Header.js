@@ -10,16 +10,16 @@ export default class Header extends Component {
     constructor(props){
         super(props);
         this.state = {
-            video:'playing'
+            video:'ended'
         }
     }
     render(){
         return (
             <header>
                 <div className="video-layer layer">
-                    <video ref="video" autoPlay="autoplay" src="../src/static/video/Sail-Away.mp4" />
+                    <video ref="video" src="../src/static/video/Sail-Away.mp4" />
                 </div>
-                <div className="gradient-layer layer"></div>
+                <div className={(this.state.video == 'playing' ? "hide" : "show") + " gradient-layer layer"}></div>
                 <div className="header-layer layer">
                     <div className="header-navigation-padding">
                         <div className="header-navigation-wrapper">
@@ -53,8 +53,6 @@ export default class Header extends Component {
             this.setState({
                 video:'ended'
             });
-
-            console.log(this.state)
         }
     }
 }

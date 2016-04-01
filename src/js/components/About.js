@@ -43,8 +43,8 @@ export default class About extends Component {
                     <p>Sailor is designed to make your business highly effective</p>
                 </div>
                 <ul className="perks">
-                    {perks.map(function(p){
-                        return <Perk {...p} />
+                    {perks.map(function(p, i){
+                        return <Perk key={i} {...p} />
                     })}
                 </ul>
             </section>
