@@ -28,7 +28,7 @@ module.exports = {
             include: path.join(__dirname, 'src/static')
         },
         {
-            test: /\.(otf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            test: /\.(mp4|otf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             loader: "file",
             include: path.join(__dirname, 'src/static')
         }]

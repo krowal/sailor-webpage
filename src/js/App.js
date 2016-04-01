@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import BigHeader from './components/BigHeader';
+import Header from './components/Header';
+import About from './components/About';
 
 export default class App extends Component {
     render() {
         return (
-            <div className="main-wrapper">
-                <BigHeader />
-            </div>
+            <main>
+                <Header />
+                <About />
+            </main>
         );
     }
 }

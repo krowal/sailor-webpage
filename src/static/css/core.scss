@@ -6,3 +6,104 @@ html{
         margin:0;
     }
 }
+
+a{
+    text-decoration:none;
+}
+
+main{
+    font-family:Gotham-book;
+}
+
+header{
+    color:#ffffff;
+    a{
+        color:#ffffff;
+    }
+}
+
+.header-navigation-padding{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    font-family:Gotham;
+    .header-navigation-wrapper{
+        padding:0 40px;
+    }
+}
+
+.app-logo{
+    font-weight:bold;
+    font-size:2em;
+}
+
+.layer{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.gradient-layer{
+    opacity:0.21;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006ffc+0,000365+100 */
+    background: rgb(0,111,252); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,111,252,1) 0%, rgba(0,3,101,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,111,252,1) 0%,rgba(0,3,101,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(0,111,252,1) 0%,rgba(0,3,101,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006ffc', endColorstr='#000365',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.video-layer{
+    video{
+        width:100%;
+        height:100%;
+    }
+}
+
+.headed-description{
+    text-align:center;
+    padding:60px 0px;
+    color:#333333;
+    h1{
+        font-size:64px;
+        line-height:121%;
+        color:#333333;
+        font-family:Gotham;
+        font-weight:700;
+    }
+    p{
+        font-size:24px;
+        line-height:121%;
+        opacity:0.45;
+    }
+}
+
+ul.perks{
+    text-align:center;
+    vertical-align: text-top;
+    li{
+        .inner-wrapper{
+            padding:0 30px;
+        }
+        padding:30px 0;
+        display:inline-block;
+        width:33.33333333%;
+        img{
+            display:inline-block;
+            padding-bottom:15px;
+        }
+        h3{
+            font-size:36px;
+            line-height:120%;
+            color:#333333;
+            margin-bottom:15px;
+        }
+        p{
+            font-size:116%;
+            color:#8f8f8f;
+        }
+    }
+}
