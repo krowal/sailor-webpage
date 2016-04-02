@@ -5,6 +5,33 @@
  */
 import React, { Component } from 'react';
 
+let menu = [
+    {
+        name:'About',
+        href:'#about'
+    },
+    {
+        name:'Team',
+        href:'#team'
+    },
+    {
+        name:'Pricing',
+        href:'#pricing'
+    },
+    {
+        name:'Careers',
+        href:'#careers'
+    },
+    {
+        name:'Blog',
+        href:'#blog'
+    },
+    {
+        name:'Purchase',
+        href:'#purchase'
+    }
+];
+
 export default class HeaderNavigation extends Component {
     constructor(props){
         super(props);
@@ -20,12 +47,13 @@ export default class HeaderNavigation extends Component {
                     <img src="/src/static/svg/send_icon.svg"/>
                 </a>
                 <ul className={this.state.menu == 'show' ? 'show' : 'hide'}>
-                    <li><a onClick={this.toggleMenu.bind(this)} href="#">About</a></li>
-                    <li><a onClick={this.toggleMenu.bind(this)} href="#">Team</a></li>
-                    <li><a onClick={this.toggleMenu.bind(this)} href="#">Pricing</a></li>
-                    <li><a onClick={this.toggleMenu.bind(this)} href="#">Careers</a></li>
-                    <li><a onClick={this.toggleMenu.bind(this)} href="#">Blog</a></li>
-                    <li><a onClick={this.toggleMenu.bind(this)} href="#">Purchase</a></li>
+                    {menu.map(function(e, i){
+                        return (
+                            <li key={i}>
+                                <a onClick={this.toggleMenu.bind(this)} href={e.href}>{e.name}</a>
+                            </li>
+                        )
+                    }.bind(this))}
                 </ul>
             </nav>
         )

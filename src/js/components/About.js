@@ -37,11 +37,12 @@ let perks = [
 export default class About extends Component {
     render(){
         return (
-            <section className="about-section">
+            <section id="about" className="about-section">
                 <div className="headed-description">
                     <h1>About Sailor</h1>
                     <p>Sailor is designed to make your business highly effective</p>
                 </div>
+                <hr />
                 <ul className="perks">
                     {perks.map(function(p, i){
                         return <Perk key={i} {...p} />

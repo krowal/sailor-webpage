@@ -65,8 +65,12 @@
             li{
                 background-color:rgba(0,0,0,0.8);
                 margin-bottom:2px;
-                width:100px;
+                width:150px;
                 text-align:center;
+                a{
+                    line-height:3em;
+                    display:block;
+                }
             }
             &.show{
                 right:0px;

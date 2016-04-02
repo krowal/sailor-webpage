@@ -13,9 +13,6 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: '/static/'
     },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin()
-    ],
     module: {
         loaders: [{
             test: /\.js$/,
@@ -24,6 +21,7 @@ module.exports = {
         },
         {
             test: /\.scss$/,
+            //loader: ExtractTextPlugin.extract('stysle', 'css!sass'),
             loaders: ['style', 'css', 'sass'],
             include: path.join(__dirname, 'src/static')
         },
@@ -32,5 +30,8 @@ module.exports = {
             loader: "file",
             include: path.join(__dirname, 'src/static')
         }]
-    }
+    },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ]
 };
