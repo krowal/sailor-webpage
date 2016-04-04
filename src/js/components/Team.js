@@ -4,6 +4,7 @@
  * @author lukaszkowalski
  */
 import React, { Component } from 'react';
+import Chairs from './team/Chairs';
 
 export default class Team extends Component {
     render(){
@@ -14,6 +15,7 @@ export default class Team extends Component {
                     <h1>Executive Team</h1>
                     <p>People are the most powerful and valuable part of every project</p>
                 </div>
+                <Chairs />
             </section>
         )
     }

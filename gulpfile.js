@@ -6,6 +6,7 @@ var babelify    = require('babelify');
 var sass        = require('gulp-sass');
 var sourcemaps  = require('gulp-sourcemaps');
 var clean_css   = require('gulp-clean-css');
+var server      = require('gulp-server-livereload');
 
 var dependencies = [
     'react',
@@ -35,6 +36,14 @@ gulp.task('deploy', function (){
     return bundleApp(true);
 });
 
+gulp.task('server', function(){
+    return gulp.src('dist')
+        .pipe(server({
+            port:30003,
+            open: true
+        }));
+});
+
 gulp.task('styles', function(){
     return gulp.src('./src/css/style.scss')
         .pipe(sourcemaps.init())
@@ -50,7 +59,7 @@ gulp.task('watch', function () {
     gulp.watch(['./src/css/**'], ['styles']);
 });
 
-gulp.task('default', ['scripts', 'styles', 'copy-static-files', 'watch']);
+gulp.task('default', ['scripts', 'styles', 'copy-static-files', 'watch', 'server']);
 
 
 function bundleApp(isProduction) {

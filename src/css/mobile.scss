@@ -73,8 +73,28 @@
                 }
             }
             &.show{
-                right:0px;
+                right:0;
             }
+        }
+    }
+
+    .chairs-display-wrapper{
+        width:100%;
+        overflow:hidden;
+    }
+
+    .chairs-display{
+        margin-top:40px;
+        text-align:center;
+        width:240%;
+        overflow:hidden;
+
+        .chair{
+            img{
+                width:100%;
+            }
+            width:70vw;
+            margin:0;
         }
     }
 }

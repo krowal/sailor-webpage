@@ -2,6 +2,13 @@ a{
     text-decoration:none;
 }
 
+hr{
+    border:0;
+    width:200px;
+    height:5px;
+    background:#53a2fc;
+}
+
 header{
     overflow:hidden;
     width:100%;
@@ -143,10 +150,33 @@ ul.perks{
     }
 }
 
-hr{
-    border:0;
-    width:200px;
-    height:5px;
-    background:#53a2fc;
+.chairs-display{
+    margin-top:40px;
+    text-align:center;
+    .chair{
+        margin:0 5px;
+        display:inline-block;
 
+        .info-section{
+            padding-bottom:40px;
+        }
+
+        img{
+            width:350px;
+        }
+
+        h4{
+            font-size:24px;
+            line-height:121%;
+        }
+
+        span.role{
+            font-size:16px;
+            line-height:113%;
+        }
+
+        &:hover{
+            box-shadow: 0 0 50px #d4d4d4;
+        }
+    }
 }
