@@ -39,8 +39,7 @@ gulp.task('deploy', function (){
 gulp.task('server', function(){
     return gulp.src('dist')
         .pipe(server({
-            port:30003,
-            open: true
+            port:30003
         }));
 });
 

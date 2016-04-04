@@ -1,6 +1,6 @@
 Sailor app
 =====================
 `npm install`  
-`npm start`  
+`gulp`  
   
-After that open `http://localhost:3000`
+Go to: `http://localhost:30003`
