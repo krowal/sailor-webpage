@@ -1,0 +1,10 @@
+@import "../mixins/font-face";
+
+@include font-face(Gotham, "../assets/fonts/Gotham-Light", 200, null, otf);
+@include font-face(Gotham, "../assets/fonts/Gotham-LightIta", 200, italic, otf);
+
+@include font-face(Gotham, "../assets/fonts/Gotham-Medium", 400, null, otf);
+@include font-face(Gotham, "../assets/fonts/Gotham-MediumIta", 400, italic, otf);
+
+@include font-face(Gotham, "../assets/fonts/Gotham-Bold", 700, null, otf);
+@include font-face(Gotham, "../assets/fonts/Gotham-BoldIta", 700, italic, otf);
