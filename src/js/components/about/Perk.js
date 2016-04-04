@@ -10,7 +10,7 @@ export default class About extends Component {
         return (
             <li>
                 <div className="inner-wrapper">
-                    <img src={'/src/static/svg/' + this.props.icon} />
+                    <img src={'assets/svg/' + this.props.icon} />
                     <h3>{this.props.name}</h3>
                     <p>{this.props.description}</p>
                 </div>

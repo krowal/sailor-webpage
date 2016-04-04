@@ -17,7 +17,7 @@ export default class Header extends Component {
         return (
             <header className={(this.state.video == 'playing' ? "video-playing" : "")}>
                 <div className="video-layer layer">
-                    <video ref="video" src="../src/static/video/Sail-Away.mp4" />
+                    <video ref="video" src="assets/video/Sail-Away.mp4" />
                 </div>
                 <div className="gradient-layer layer"></div>
                 <div className="header-layer layer">

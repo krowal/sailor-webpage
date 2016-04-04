@@ -44,7 +44,7 @@ export default class HeaderNavigation extends Component {
             <nav className="header-navigation">
                 <a href="#" className="navigation-toggle"
                     onClick={this.toggleMenu.bind(this)}>
-                    <img src="/src/static/svg/send_icon.svg"/>
+                    <img src="../assets/svg/send_icon.svg"/>
                 </a>
                 <ul className={this.state.menu == 'show' ? 'show' : 'hide'}>
                     {menu.map(function(e, i){
