@@ -15,11 +15,11 @@ export default class Header extends Component {
     }
     render(){
         return (
-            <header>
+            <header className={(this.state.video == 'playing' ? "video-playing" : "")}>
                 <div className="video-layer layer">
                     <video ref="video" src="../src/static/video/Sail-Away.mp4" />
                 </div>
-                <div className={(this.state.video == 'playing' ? "hide" : "show") + " gradient-layer layer"}></div>
+                <div className="gradient-layer layer"></div>
                 <div className="header-layer layer">
                     <div className="header-navigation-padding">
                         <div className="header-navigation-wrapper">
@@ -31,9 +31,7 @@ export default class Header extends Component {
                         <h1>This is Sailor.</h1>
                         <p>Responsive. Retina ready. SVG-friendly</p>
                         <div>
-                            <a className={this.state.video == 'playing' ? "hide" : "show"}
-                               href="#"
-                               onClick={this.playVideo.bind(this)}>
+                            <a href="#" onClick={this.playVideo.bind(this)}>
                                 WATCH VIDEO
                             </a>
                         </div>

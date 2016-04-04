@@ -11,6 +11,17 @@ header{
     a{
         color:#ffffff;
     }
+
+    &.video-playing{
+        a{
+            opacity:0;
+            pointer-events: none;
+        }
+
+        .gradient-layer{
+            opacity:0.21;
+        }
+    }
 }
 
 .header-navigation-padding{
@@ -38,7 +49,7 @@ header{
 }
 
 .gradient-layer{
-    opacity:0.21;
+    opacity:0.79;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006ffc+0,000365+100 */
     background: rgb(0,111,252); /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, rgba(0,111,252,1) 0%, rgba(0,3,101,1) 100%); /* FF3.6-15 */
@@ -47,13 +58,6 @@ header{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006ffc', endColorstr='#000365',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
     transition: opacity 0.5s ease-in-out;
-
-    &.hide{
-        opacity:0.21;
-    }
-    &.show{
-        opacity:0.8;
-    }
 }
 
 .video-layer{
@@ -109,13 +113,6 @@ header{
         padding:15px 25px 15px 50px;
         background: #10164f url(../svg/play_icon.svg) no-repeat 25px 50%;
         transition: opacity 0.5s ease-in;
-        &.hide{
-            opacity:0;
-            pointer-events: none;
-        }
-        &.show{
-            opacity:1;
-        }
     }
 }
 
