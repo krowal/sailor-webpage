@@ -1,8 +1,11 @@
 var gulp        = require('gulp');
 var browserify  = require('browserify');
 var source      = require('vinyl-source-stream');
+var buffer      = require('vinyl-buffer');
 var gutil       = require('gulp-util');
 var babelify    = require('babelify');
+var streamify   = require('gulp-streamify');
+var uglify      = require('gulp-uglify');
 var sass        = require('gulp-sass');
 var sourcemaps  = require('gulp-sourcemaps');
 var clean_css   = require('gulp-clean-css');
@@ -89,6 +92,10 @@ function bundleApp(isProduction) {
         .transform("babelify", {presets: ["es2015", "react"]})
         .bundle()
         .on('error',gutil.log)
-        .pipe(source('bundle.js'))
+        .pipe(source('bundle.min.js'))
+        .pipe(buffer())
+        .pipe(sourcemaps.init({loadMaps:true}))
+        .pipe(streamify(uglify()))
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./dist/js/'));
 }
